@@ -1,0 +1,201 @@
+{{title:Form Elements - HTML5}}
+
+<form action="" method="post">	
+	
+<fieldset>
+	<legend>Legend</legend>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	<ol>
+		<li>
+			<label for="txtfirstname">First Name <em>*</em></label>
+			<input type="text" id="txtfirstname" name="firstname" size="40" placeholder="Enter your first name" required />
+			<span class="alert">Please enter your name</span>
+		</li>
+		<li>
+			<label for="txtsurname">Surname <em>*</em></label>
+			<input type="text" id="txtsurname" name="surname" size="40" placeholder="Enter your surname" required />
+			<span class="alert">Please enter your surname</span>
+		</li>
+		<li>
+			<label for="txtemail">E-mail <em>*</em></label>
+			<input type="email" id="txtemail" name="email" size="40" placeholder="Enter your e-mail address" required />
+			<span class="alert">Please enter a valid e-mail address</span>
+		</li>
+		<li>
+			<label for="txtpassword">Password <em>*</em></label>
+			<input type="password" id="txtpassword" name="password" size="40" placeholder="Enter your password" required />
+			<span class="alert">Please enter a password</span>
+		</li>
+		<li>
+			<label for="txturl">URL <em>*</em></label>
+			<input type="url" id="txturl" name="url" size="40" placeholder="Enter your URL" required />
+			<span class="alert">Please enter a valid URL</span>
+		</li>
+		<li>
+			<label for="txtcomments">Comments <em>*</em></label>
+			<textarea id="txtcomments" name="comments" rows="6" cols="38" placeholder="Enter your comments" required></textarea>
+			<span class="alert">Please enter some comments</span>
+		</li>
+	</ol>
+
+</fieldset>
+	
+<fieldset>
+	<legend>Legend</legend>
+
+	<ol>
+		<li>
+			<label for="ddloptions">Selector <em>*</em></label>
+			<select id="ddloption" name="options" required>
+				<option selected value="">Select from...</option>
+				<optgroup label="Options 1:">
+					<option value="Option 1">Option 1</option>
+					<option value="Option 2">Option 2</option>
+					<option value="Option 3">Option 3</option>
+					<option value="Option 4">Option 4</option>
+				</optgroup>
+				<optgroup label="Options 2:">
+					<option value="Option 1">Option 1</option>
+					<option value="Option 2">Option 2</option>
+					<option value="Option 3">Option 3</option>
+					<option value="Option 4">Option 4</option>
+				</optgroup>
+			</select>
+			<span class="alert">Please select an option</span>
+		</li>
+		<li>
+			<label>Date <em>*</em> <span>Please select a date</span></label>
+			<select id="ddlday" name="day">
+				<option selected value=""></option>
+				<option>01</option>
+			</select>
+	  
+			<select title="ddlmonth" name="month">
+				<option selected value=""></option>
+				<option>Jan</option>
+			</select>
+	  
+			<select title="year" name="year">
+				<option selected value=""></option>
+				<option>2011</option>
+			</select>
+		</li>
+		<li>
+			<label>Checkboxes</label>
+			<label for="chkoption01">
+				<input type="checkbox" id="chkoption01" name="option01" value="Option 01" /> Option 01
+			</label>
+			<label for="chkoption02">
+				<input type="checkbox" id="chkoption02" name="option02" value="Option 02" /> Option 02
+			</label>
+			<label for="chkoption03">
+				<input type="checkbox" id="chkoption03" name="option03" value="Option 03" /> Option 03
+			</label>
+		</li>
+		<li>
+			<label>Radio</label>
+			<label for="radoption01">
+				<input type="radio" id="radoption01" name="radio" value="Option 01" /> Option 01
+			</label>
+			<label for="radoption02">
+				<input type="radio" id="radoption02" name="radio" value="Option 02" /> Option 02
+			</label>
+			<label for="radoption03">
+				<input type="radio" id="radoption03" name="radio" value="Option 03" /> Option 03
+			</label>
+		</li>
+	</ol>
+
+</fieldset>
+	
+<fieldset>
+
+	<ol>
+		<li>
+			<label for="chkmailinglist">
+				<input type="checkbox" id="chkmailinglist" name="mailinglist" value="mailinglist" checked /> Join our mailing list
+			</label>
+		</li>
+		<li>
+			<label for="chkterms">
+				<input type="checkbox" id="chkterms" name="terms" value="terms" required /> I accept the <a href="#">terms and conditions</a> <em>*</em>
+				<span class="alert">Please accept the terms and conditions</span>
+			</label>
+		</li>
+	</ol>
+
+</fieldset>
+	
+<fieldset>
+
+	<legend>HTML5 Form elements</legend>
+	
+	<ol>
+		 <li>
+			<label for="html5text">Text</label>
+			<input type="text" id="html5text" name="text" size="40" value="" placeholder="text" />
+		</li>
+		<li>
+			<label for="html5email">Email</label>
+			<input type="email" id="html5email" name="email" size="40" value="" placeholder="email" />
+		</li>
+		<li>
+			<label for="html5password">Password</label>
+			<input type="password" id="html5password" name="password" size="40" value="" placeholder="password" />
+		</li>
+		<li>
+			<label for="html5search">Search</label>
+			<input type="search" id="html5search" name="search" size="40" value="" placeholder="search" />
+		</li>
+		<li>
+			<label for="html5url">URL</label>
+			<input type="url" id="html5url" name="url" size="40" value="" placeholder="http://example.com" />
+		</li>
+		<li>
+			<label for="html5color">Color</label>
+			<input type="color" id="html5color" name="color" size="40" value="#00FF33" />
+		</li>
+		<li>
+			<label for="html5number">Number</label>
+			<input type="number" id="html5number" name="number" size="40" value="5" />
+		</li>
+		<li>
+			<label for="html5range">Range</label>
+			<input type="range" id="html5range" name="range" size="40" value="10" />
+		</li>
+		<li>
+			<label for="html5date">Date</label>
+			<input type="date" id="html5date" name="date" size="40" value="1976-01-01" />
+		</li>
+		<li>
+			<label for="html5month">Month</label>
+			<input type="month" id="html5month" name="month" size="40" value="1976-01-01" />
+		</li>
+		<li>
+			<label for="html5week">Week</label>
+			<input type="date" id="html5week" name="week" size="40" value="1976-W01" />
+		</li>
+		<li>
+			<label for="html5datetime">Datetime</label>
+			<input type="date" id="html5datetime" name="week" size="40" value="1976-W01" />
+		</li>
+		<li>
+			<label for="html5datetime-local">Datetime Local</label>
+			<input type="date" id="html5datetime-local" name="datetime-local" size="40" value="1976-01-01T00:00" />
+		</li>
+	</ol>
+	
+</fieldset>
+		
+<input type="reset" id="btnreset" name="reset" value="Reset" class="button" />
+<input type="submit" id="btnsubmit" name="submit" value="Submit" class="button" />
+<input type="button" id="btnbutton" name="button" value="Button" class="button" />
+
+
+<button type="reset" id="btnreset02" name="reset" class="button">Reset (button)</button>
+<button type="submit" id="btnsubmit02" name="submit" class="button">Submit (button)</button>
+<button type="button" id="btnbutton02" name="button" class="button">Button (button)</button>
+	
+</form>

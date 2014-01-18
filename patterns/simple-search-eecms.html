@@ -1,0 +1,15 @@
+{{title:ExpressionEngine Simple Search}}
+
+{exp:search:simple_form channel="news" no_result_page="search/noresults" result_page="search/" results="5" search_in="everywhere"}
+
+<fieldset>
+	<div>
+		<label for="txtkeywords">Search:</label>
+		<input type="text" id="txtkeywords" name="keywords" value="" size="20" maxlength="100" class="long" placeholder="Search site" />
+	</div>
+	<p><a href="{path='search/index'}">Advanced Search</a></p>
+</fieldset>
+
+<input type="submit" id="btnsearch" name="search" value="Search" class="button" />
+
+{/exp:search:simple_form}

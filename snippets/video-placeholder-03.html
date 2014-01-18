@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Video Placeholder - 03</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/gagarin.css" />
+
+</head>
+
+<body class="video-placeholder">
+
+<!-- MARKUP -->
+<div class="placeholder">
+	<img src="assets/placeholders/video-placeholder-560x315.jpg" alt="" title="Click to load video" />
+</div>
+
+<div class="video">
+	<iframe width="560" height="315" src="http://www.youtube.com/embed/T0Jqdjbed40?autoplay=0" frameborder="0" class="myvideo"></iframe>
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	
+	// REPLACE PLACEHOLDER IMAGE WITH VIDEO
+	$('.video').hide();
+	$('.placeholder').click(function(){
+		$(this).hide();
+		$('.video').show();
+		$('iframe.myvideo').attr('src', $('iframe.myvideo').attr('src').replace('autoplay=0', 'autoplay=1'));
+		//e.preventDefault();		
+    });
+});  
+</script>
+
+</body>
+</html>

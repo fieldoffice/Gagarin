@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Take Me To The Top</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/gagarin.css" />
+
+</head>
+
+<body class="take-me-to-the-top">
+
+<!-- MARKUP -->
+<a href="#top" class="top">Top</a>
+
+<!-- JAVASCRIPT -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	
+	/* TAKE ME TO THE TOP */    
+	$('.top').hide();
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {//SCROLL DISTANCE FROM TOP
+			$('.top').fadeIn();
+		} else {
+			$('.top').fadeOut();
+		}
+    });
+
+	$('.top').click(function() {
+		$('html, body').animate({
+			scrollTop: 0
+		}, 600);
+        return false;
+    });
+
+});  
+</script>
+
+</body>
+</html>

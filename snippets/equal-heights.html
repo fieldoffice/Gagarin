@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Equal Heights</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/gagarin.css" />
+
+</head>
+
+<body class="equal-heights">
+
+<!-- MARKUP -->
+
+<div class="equal-height-item">
+	<h3>Column 01</h3>
+	<p>Set equal heights across items.</p>
+</div>
+
+<div class="equal-height-item">
+	<h3>Column 02</h3>
+	<p>Aenean nibh nisi, sagittis a blandit eget, auctor at augue. Nam ac est velit, ut posuere dolor. Nulla odio orci, accumsan eu pretium non, scelerisque non lacus. Vivamus a sollicitudin nisi. In ullamcorper metus eget libero interdum blandit. Nullam egestas nunc quis metus euismod cursus eu ac augue.</p>
+</div>
+
+<div class="equal-height-item">
+	<h3>Column 03</h3>
+	<p>Nullam egestas nunc quis metus euismod cursus eu ac augue.</p>
+</div>
+
+<!-- JAVASCRIPT -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+
+	$.fn.setAllToMaxHeight = function(){
+       return this.height( Math.max.apply(this, $.map( this , function(e){
+           if($(e).height()){
+               return $(e).height();
+           }
+       }) ) );
+   }
+   $('.equal-height-item').setAllToMaxHeight();
+
+</script>
+
+</body>
+</html>

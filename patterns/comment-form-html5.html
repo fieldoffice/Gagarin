@@ -1,0 +1,42 @@
+{{title:Comment Form - HTML5}}
+
+<h3>Add a comment</h3>
+			
+<div class="notification">
+	<p>Your comment has been submitted for moderation</p>
+</div>
+			
+<form action="#" method="post">
+			
+<p>Comments are moderated before they appear on the website.</p>
+			
+<fieldset>
+
+<ol>
+	<li>
+		<label for="txtname">Name: <em>*</em></label>
+		<input type="text" id="txtname" name="name" size="40" value="" class="long" placeholder="Enter your name" required />
+		<span class="alert">Please enter your name</span>
+	</li>
+	<li>
+		<label for="txtemail">E-mail: <em>*</em></label>
+		<input type="email" id="txtemail" name="email" size="40" value="" class="long" placeholder="Enter your e-mail address" required />
+		<span>Required but not published</span>
+		<span class="alert">Please enter a valid contact e-mail address</span>
+	</li>
+	<li>
+		<label for="txtwebsite">Website:</label>
+		<input type="text" id="txtwebsite" name="website" size="40" value="" class="long" placeholder="Enter your website address" />
+	</li>
+	<li>
+		<label for="txtcomment">Comment: <em>*</em></label>
+		<textarea id="txtcomment" name="comment" rows="8" cols="40" class="long" placeholder="Enter your comment" required></textarea>
+		<span class="alert">Please enter a comment</span>
+	</li>
+</ol>
+
+</fieldset>
+
+<input type="submit" id="btnsubmit" name="submit" value="Submit comment" class="button" />
+
+</form>

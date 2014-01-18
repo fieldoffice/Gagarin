@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Video Placeholder</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/gagarin.css" />
+
+</head>
+
+<body class="video-placeholder">
+
+<!-- MARKUP -->
+<div class="placeholder">
+	<img src="assets/placeholders/video-placeholder-560x315.jpg" alt="" title="Click to load video" />
+</div>
+
+<!-- JAVASCRIPT -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	
+	// REPLACE PLACEHOLDER IMAGE WITH VIDEO
+	$('.placeholder').click(function(e) {
+		var embedcode = '<iframe width="560" height="315" src="http://www.youtube.com/embed/T0Jqdjbed40?autoplay=1" frameborder="0"></iframe>';
+        $('.placeholder').replaceWith(embedcode);
+		e.preventDefault();
+    });
+});  
+</script>
+
+</body>
+</html>

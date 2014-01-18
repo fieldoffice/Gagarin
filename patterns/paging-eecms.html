@@ -1,0 +1,10 @@
+{{title:ExpressionEngine Paging}}
+
+<ul class="article=paging">
+	{exp:channel:prev_entry channel="channel-name"}
+	<li class="previous"><a href="{path="channel-name"}" title="{next_entry->title}">Previous Article</a></li>
+	{/exp:channel:prev_entry}
+	{exp:channel:next_entry channel="channel-name"}
+	<li class="next"><a href="{path="channel-name"}" title="{next_entry->title}"">Next Article</a></li>
+	{/exp:channel:next_entry}
+</ul>

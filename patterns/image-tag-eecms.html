@@ -1,0 +1,12 @@
+{{title:ExpressionEngine Image Tag}}
+
+{exp:channel:entries channel="gallery"}
+
+{gallery-image}
+<figure>
+	<img src="{path}_shortname/{filename}.{extension}" alt="{title}" />
+	<figcaption>{description}</figcaption>
+</figure>
+{/gallery-image}
+
+{/exp:channel:entries}
